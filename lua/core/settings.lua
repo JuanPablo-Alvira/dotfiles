@@ -1,6 +1,7 @@
 -- disable netrw plug in for file exploration
 vim.g.loaded_netrwPlugin = 1
 vim.g.loaded_netrw = 1
+
 -- Enable line and relative number
 vim.wo.number = true
 vim.wo.relativenumber = true
@@ -30,3 +31,7 @@ vim.o.hlsearch = true -- Highlight search results
 vim.o.showtabline = 2 -- Always show tabs
 vim.o.undofile = true -- Save undo history
 vim.o.modifiable = true -- Allow changing of buffer
+
+-- Indent and stay in visual mode
+vim.api.nvim_set_keymap("v", "<", "<gv", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", ">", ">gv", { noremap = true, silent = true })
