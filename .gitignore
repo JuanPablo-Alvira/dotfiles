@@ -1,0 +1,8 @@
+# .gitignore
+
+# Ignore system files
+.DS_Store
+*.log
+
+# Ignore Neovim generated files
+nvim/plugin/packer_compiled.lua
