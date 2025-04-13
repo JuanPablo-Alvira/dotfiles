@@ -107,6 +107,8 @@ alias dockerprune='docker system prune --all --volumes=false'
 alias spotmindvpn='sudo openvpn --config /etc/openvpn/profile-228.ovpn'
 alias dockerstop='docker stop $(docker ps -aq)'
 
+alias resetbluetooth='sudo systemctl restart bluetooth'
+
 alias python='python3'
 alias vim='nvim'
 alias vi='nvim'
